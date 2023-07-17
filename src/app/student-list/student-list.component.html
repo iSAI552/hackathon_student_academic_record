@@ -1,0 +1,186 @@
+<!-- <div class="student-list-container container">
+  <h2>Student List</h2>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="studentId">Student ID</label>
+      <input type="number" class="form-control" id="studentId" [(ngModel)]='filterStudentId' (input)='filterStudents()'>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject1">Subject 1 Marks</label>
+      <input type="number" class="form-control" id="subject1" [(ngModel)]="filterSubject1" (input)="filterStudents()">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject2">Subject 2 Marks</label>
+      <input type="number" class="form-control" id="subject2" [(ngModel)]="filterSubject2" (input)="filterStudents()">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject3">Subject 3 Marks</label>
+      <input type="number" class="form-control" id="subject3" [(ngModel)]="filterSubject3" (input)="filterStudents()">
+    </div>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Marks (Subject 1)</th>
+        <th>Marks (Subject 2)</th>
+        <th>Marks (Subject 3)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of filteredStudents">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.marksSubject1 }}</td>
+        <td>{{ student.marksSubject2 }}</td>
+        <td>{{ student.marksSubject3 }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm" (click)="editStudent(student)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<!-- <div class="student-list-container container">
+  <h2>Student List</h2> -->
+
+  <!-- Filter input fields for student ID and subject marks -->
+  <!-- <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="studentId">Student ID</label>
+      <input type="number" class="form-control" id="studentId" [(ngModel)]="filterStudentId" (input)="filterStudents()">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject1">Subject 1 Marks</label>
+      <input type="number" class="form-control" id="subject1" [(ngModel)]="filterSubject1" (input)="filterStudents()">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject2">Subject 2 Marks</label>
+      <input type="number" class="form-control" id="subject2" [(ngModel)]="filterSubject2" (input)="filterStudents()">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject3">Subject 3 Marks</label>
+      <input type="number" class="form-control" id="subject3" [(ngModel)]="filterSubject3" (input)="filterStudents()">
+    </div>
+  </div> -->
+
+
+  <!-- Filter input fields for student ID and subject marks -->
+<!-- <div class="form-row">
+  <div class="form-group col-md-3">
+    <label for="studentId">Student ID</label>
+    <input type="number" class="form-control" id="studentId" [(ngModel)]="filterStudentId" (ngModelChange)="filterStudents()">
+  </div>
+  <div class="form-group col-md-3">
+    <label for="subject1">Subject 1 Marks</label>
+    <input type="number" class="form-control" id="subject1" [(ngModel)]="filterSubject1" (ngModelChange)="filterStudents()">
+  </div>
+  <div class="form-group col-md-3">
+    <label for="subject2">Subject 2 Marks</label>
+    <input type="number" class="form-control" id="subject2" [(ngModel)]="filterSubject2" (ngModelChange)="filterStudents()">
+  </div>
+  <div class="form-group col-md-3">
+    <label for="subject3">Subject 3 Marks</label>
+    <input type="number" class="form-control" id="subject3" [(ngModel)]="filterSubject3" (ngModelChange)="filterStudents()">
+  </div>
+</div>
+
+
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Marks (Subject 1)</th>
+        <th>Marks (Subject 2)</th>
+        <th>Marks (Subject 3)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of filteredStudents">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.marksSubject1 }}</td>
+        <td>{{ student.marksSubject2 }}</td>
+        <td>{{ student.marksSubject3 }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm" (click)="editStudent(student)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<div class="student-list-container container">
+  <h2>Student List</h2>
+
+  <!-- Filter input fields for student ID and subject marks -->
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="studentId">Student ID</label>
+      <input type="number" class="form-control" id="studentId" [(ngModel)]="filterStudentId">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject1">Subject 1 Marks</label>
+      <input type="number" class="form-control" id="subject1" [(ngModel)]="filterSubject1">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject2">Subject 2 Marks</label>
+      <input type="number" class="form-control" id="subject2" [(ngModel)]="filterSubject2">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="subject3">Subject 3 Marks</label>
+      <input type="number" class="form-control" id="subject3" [(ngModel)]="filterSubject3">
+    </div>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Marks (Subject 1)</th>
+        <th>Marks (Subject 2)</th>
+        <th>Marks (Subject 3)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of filteredStudents">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.marksSubject1 }}</td>
+        <td>{{ student.marksSubject2 }}</td>
+        <td>{{ student.marksSubject3 }}</td>
+        <td>
+          <button class="btn btn-primary btn-sm" (click)="editStudent(student)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,16 @@
+<div class="student-details-container container">
+    <h2>Student Details</h2>
+    <form (ngSubmit)="saveStudent()" class="mt-4">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="student.name" required class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" [(ngModel)]="student.age" required class="form-control">
+      </div>
+      <!-- Add other student record fields here -->
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+  
